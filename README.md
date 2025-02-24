@@ -35,16 +35,19 @@ pip install -v --disable-pip-version-check --no-cache-dir ./
 4. Install other pakages if needed
 
 ### Download Checkpoints
-Please download the pretrained weight of backbone from https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt[Code: s7qt].
+Please download the pretrained weight of backbone from https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt [Code: s7qt].
 
 ### Download Datasets or Prepare Your Own Dataset
 
 1. Download datasets
-Please download the AMUBUS dataset and BUSI dataset from https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt[Code: s7qt].
+
+Please download the AMUBUS dataset and BUSI dataset from https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt [Code: s7qt].
 
 2. Prepare your own dataset
 
 Make sure the dataset folder structure like this:
+
+You can use ```utils/generate_txt.py``` to generate the ```train.txt``` and ```test.txt```.
 ```
 datasets
     ├── AMUBUS
@@ -96,4 +99,4 @@ cd .../ICLNet
 python test.py
 ```
 ## Cite
-Coming soon.
+If you find this work useful for your, please consider citing our paper. Thank you!
