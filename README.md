@@ -45,10 +45,10 @@ pip install -v --disable-pip-version-check --no-cache-dir ./
 
 5. Install other pakages if needed
 
-### Download Checkpoints
+### Prepare Checkpoints
 You can download the pretrained weight of backbone from [https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt] [Password: ```s7qt```].
 
-### Download Datasets or Prepare Your Own Dataset
+### Prepare Datasets
 
 1. Download datasets
 
