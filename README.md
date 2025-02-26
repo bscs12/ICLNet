@@ -12,17 +12,28 @@ This repository is the official implementation for "Integrality Capsule Learning
 Convolutional neural networks (CNNs) have shown substantial promise in medical image segmentation, but current methods often struggle with accurately delineating lesion regions, leading to incomplete boundaries or missed interior areas. To address these limitations, we propose a novel model, Integrality Capsule Learning Network (ICLNet), designed specifically for the segmentation of breast lesions in ultrasound (BUS) images. ICLNet introduces two key innovations. First, we replace traditional skip connections in U-Net with a Residual Global Local Attention (RGLA) module, which enhances both global and local feature representation while preserving the original image features, thereby improving segmentation integrity. Second, inspired by capsule networks, we design a novel CapsDecoder decoder, leveraging the capability of capsules to capture both local and global object features, further improving segmentation accuracy. Experimental results on the AMUBUS and BUSI datasets demonstrate that ICLNet outperforms existing state-of-the-art methods for medical image segmentation. Our code is available at https://github.com/bscs12/ICLNet.
 
 ## Getting Started
-### Create Environment
-1.
+### Prepare Environment
+1. Clone repository
 ```
-conda create -n ICLNet
-conda activate ICLNet
-conda install python=3.8
+git clone https://github.com/bscs12/ICLNet.git
+cd ICLNet
 ```
 
-2. Install PyTorch
+2. Create environment
 ```
-conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 -c pytorch
+conda create -n ICLNet python=3.8
+conda activate ICLNet
+```
+
+3. Install PyTorch
+
+方式一：
+```
+pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0 --extra-index-url https://download.pytorch.org/whl/cu113
+```
+方式二：
+```
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
 
 3. Install APEX
@@ -35,13 +46,13 @@ pip install -v --disable-pip-version-check --no-cache-dir ./
 4. Install other pakages if needed
 
 ### Download Checkpoints
-Please download the pretrained weight of backbone from https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt [Code: s7qt].
+You can download the pretrained weight of backbone from [https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt] [Password: ```s7qt```].
 
 ### Download Datasets or Prepare Your Own Dataset
 
 1. Download datasets
 
-Please download the AMUBUS dataset and BUSI dataset from https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt [Code: s7qt].
+You can download the AMUBUS dataset and BUSI dataset from [https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt] [Password: ```s7qt```].
 
 2. Prepare your own dataset
 
@@ -90,12 +101,10 @@ datasets
 ```
 ### Train
 ```
-cd .../ICLNet
 python train.py
 ```
 ### Test
 ```
-cd .../ICLNet
 python test.py
 ```
 ## Cite
