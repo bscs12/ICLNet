@@ -36,14 +36,14 @@ pip install torch==1.10.0+cu113 torchvision==0.11.0+cu113 torchaudio==0.10.0 --e
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
 
-3. Install APEX
+4. Install APEX
 ```
 git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir ./
 ```
 
-4. Install other pakages if needed
+5. Install other pakages if needed
 
 ### Download Checkpoints
 You can download the pretrained weight of backbone from [https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt] [Password: ```s7qt```].
