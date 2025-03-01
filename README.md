@@ -1,7 +1,6 @@
 # <p align=center>Integrality Capsule Learning Network for Breast Lesion Segmentation in Ultrasound Images</p>
 
-**Authors:**
-Le Gu, Yuchen Yan, Bo Jiang, Yuhe Ding, Zhengzheng Tu, and Chaoxue Zhang.
+<p align=center>Le Gu, Yuchen Yan, Bo Jiang, Yuhe Ding, Zhengzheng Tu, and Chaoxue Zhang</p>
 
 ## Introduction
 This repository is the official implementation for "Integrality Capsule Learning Network for Breast Lesion Segmentation in Ultrasound Images".
