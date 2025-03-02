@@ -43,12 +43,12 @@ pip install -v --disable-pip-version-check --no-cache-dir ./
 
 5. Install other pakages if needed
 
-### Prepare Checkpoints
+### Prepare Checkpoint
 You can download the pretrained weight of backbone from [https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt] [Password: ```s7qt```].
 
-### Prepare Datasets
+### Prepare Dataset
 
-1. Download datasets
+1. Download dataset
 
 You can download the AMUBUS dataset and BUSI dataset from [https://pan.baidu.com/s/1JPdYgxUePwYeFR_hRlcpTg?pwd=s7qt] [Password: ```s7qt```].
 
